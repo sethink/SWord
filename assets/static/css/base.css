@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+html {
+    width: 100%;
+    height: 100%;
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto;*/
+    overflow: auto;
+}
+
+body,
+.container {
+    width: 100%;
+    min-height: 100%;
+    /*overflow: auto;*/
+}
+
+
+.cl {
+    clear: both;
+    zoom: 1;
+}
+
+.cl:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.row {
+    box-sizing: border-box;
+}
+
+.col {
+    float: left;
+    min-height: 1px;
+    position: relative;
+    box-sizing: border-box;
+    word-wrap:break-word;
+}
